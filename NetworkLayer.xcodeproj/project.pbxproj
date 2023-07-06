@@ -24,7 +24,7 @@
 		07310D932A55CA3A0047E972 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07310D922A55CA3A0047E972 /* Response.swift */; };
 		07310D982A55CCC20047E972 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07310D972A55CCC20047E972 /* AuthRouter.swift */; };
 		07310D9B2A55CDA80047E972 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07310D9A2A55CDA80047E972 /* Error.swift */; };
-		07310D9E2A55CF350047E972 /* AuthApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07310D9D2A55CF350047E972 /* AuthApiService.swift */; };
+		07310D9E2A55CF350047E972 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07310D9D2A55CF350047E972 /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +45,7 @@
 		07310D922A55CA3A0047E972 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		07310D972A55CCC20047E972 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
 		07310D9A2A55CDA80047E972 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		07310D9D2A55CF350047E972 /* AuthApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiService.swift; sourceTree = "<group>"; };
+		07310D9D2A55CF350047E972 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				07310D7A2A55C25E0047E972 /* Agent.swift */,
-				07310D9D2A55CF350047E972 /* AuthApiService.swift */,
+				07310D9D2A55CF350047E972 /* ApiService.swift */,
 				07310D882A55C7150047E972 /* Services.swift */,
 			);
 			path = Service;
@@ -254,7 +254,7 @@
 				07310D6B2A55C1B50047E972 /* NetworkLayerApp.swift in Sources */,
 				07310D9B2A55CDA80047E972 /* Error.swift in Sources */,
 				07310D832A55C4C90047E972 /* MainTabView.swift in Sources */,
-				07310D9E2A55CF350047E972 /* AuthApiService.swift in Sources */,
+				07310D9E2A55CF350047E972 /* ApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

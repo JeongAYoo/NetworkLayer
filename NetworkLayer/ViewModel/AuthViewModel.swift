@@ -30,20 +30,17 @@ class AuthVM: ObservableObject {
             .sink { apiCompletion in
                 switch apiCompletion {
                 case .finished:
-                    print("완료")
+                    print("failure finished")
                     isSuccess = true
                     errorMessage = nil
                 case .failure(let error):
                     isSuccess = false
                     switch error {
-                    case .BAD_REQUEST(let errorData):
-                        print("400 BAD_REQUEST Error: \(errorData.message)")
-                        errorMessage = errorData.message
-                    case .CONFLICT(let errorData):
-                        print("409 CONFLICT Error: \(errorData.message)")
+                    case .http(let errorData):
+                        print("apiCompletion failure: \(errorData.message)")
                         errorMessage = errorData.message
                     default:
-                        debugPrint("Error: \(error)")
+                        debugPrint("apiCompletion failure: \(error)")
                         errorMessage = error.localizedDescription
                     }
                 }

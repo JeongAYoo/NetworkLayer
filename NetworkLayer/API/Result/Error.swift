@@ -9,12 +9,7 @@ import Foundation
 
 // 로그인 Error 타입 정의
 enum APIError: Error {
-    case BAD_REQUEST(ErrorData)             // 400 Bad request / Request is invalid
-    case UNAUTHORIZED(ErrorData)            // 401 Token is invalid / Unauthenticated Access
-    case FORBIDDEN(ErrorData)               // 403 Permission is invalid
-    case METHOD_NOT_ALLOWED(ErrorData)      // 405 Http Method is invalid
-    case CONFLICT(ErrorData)                // 409 Request resource already exists
-    case INTERNAL_SERVER_ERROR(ErrorData)   // 500 Internal server error
+    case http(ErrorData)
     case unknown
 }
 

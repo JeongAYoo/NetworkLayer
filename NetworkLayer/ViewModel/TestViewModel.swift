@@ -10,7 +10,7 @@ import Combine
 
 class TestViewModel: ObservableObject {
     // MARK: - Properties
-    let shared = APIService()
+    let shared = ApiService()
     private var cancellableSet: Set<AnyCancellable> = []
     
     // MARK: - Helpers

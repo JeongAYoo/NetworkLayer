@@ -1,5 +1,5 @@
 //
-//  APIClient.swift
+//  Services.swift
 //  NetworkLayer
 //
 //  Created by Jade Yoo on 2023/07/06.
@@ -33,7 +33,7 @@ enum TestAPIService {
 
 /// 인증 관련 api 호출
 enum AuthApiService {
-   static let agent = APIService()
+   static let agent = ApiService()
    
     static func kakaoRegister(username: String, email: String?, phoneNumber: String?, nickname: String, gender: String, birthday: [Int]) -> AnyPublisher<EmptyResponse, APIError> {
        print("AuthApiService - kakaoRegister() called")
